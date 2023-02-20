@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Varela Round', Helvetica, Arial, sans-serif;
   }
 
   #root {
@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: Varela Round, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Varela Round', Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
 
@@ -27,7 +27,27 @@ export const GlobalStyle = createGlobalStyle`
     font-size: inherit;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3 {
     font-family: 'Fredoka One'
+  }
+   
+  h4, h5, h6 {
+    font-family: 'Varela Round'
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+
+  h3 {
+    font-size: large;
+  }
+
+  h4 {
+    font-size: medium;
   }
 `;

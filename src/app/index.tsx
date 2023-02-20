@@ -17,6 +17,7 @@ import Navigation from './components/Navigation';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 import { ThemeProvider } from 'styled-components';
+import { ResetStyle } from 'styles/reset';
 
 const theme = {
   mainRed: '#ff5757',
@@ -41,6 +42,7 @@ export function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        <ResetStyle />
         <GlobalStyle />
       </ThemeProvider>
     </BrowserRouter>
