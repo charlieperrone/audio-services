@@ -10,3 +10,17 @@ To start the server, simply run:
 
 `yarn start`
 
+## TODOS
+
+- Consider moving to a typebase.css typography file
+  https://devinhunt.github.io/typebase.css/
+
+- Add image directories and viewports
+
+- Create homepage linking to different sections via the navigation header
+
+- Add a few more colors to the Theme Provider
+
+- Create a contact me section with at least links to insta or email. Bonus points for mailing list setup.
+
+- Add an additional services section
