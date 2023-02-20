@@ -7,3 +7,5 @@ The goal of this project is to create a site for a small business. The client wo
 This is a React/Typescript repository. It uses styled-components.
 
 To start the server, simply run:
+
+`yarn start`
