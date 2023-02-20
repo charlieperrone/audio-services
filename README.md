@@ -10,4 +10,3 @@ To start the server, simply run:
 
 `yarn start`
 
-<!-- comment -->
