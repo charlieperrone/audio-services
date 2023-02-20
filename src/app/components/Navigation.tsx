@@ -1,16 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { Container } from './common';
+import { Container, Header } from './common';
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled(Header)`
   background-color: ${props => props.theme.mainRed};
   color: white;
-`;
-
-const StyledContainer = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 `;
 
 const StyledNavigation = styled.nav`
@@ -26,22 +20,20 @@ const StyledNavigation = styled.nav`
 const Navigation: React.FC = () => (
   <header>
     <HeaderWrapper>
-      <StyledContainer>
-        <h1>CP Audio Services</h1>
-        <StyledNavigation>
-          <ol>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-          </ol>
-        </StyledNavigation>
-      </StyledContainer>
+      <h1>CP Audio Services</h1>
+      <StyledNavigation>
+        <ol>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ol>
+      </StyledNavigation>
     </HeaderWrapper>
   </header>
 );

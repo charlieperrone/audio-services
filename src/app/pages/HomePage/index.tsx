@@ -2,16 +2,13 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
 
-import { Container } from 'app/components/common';
+import { Container, Header } from 'app/components/common';
 
 const Section = styled.div``;
 
-const SectionHeader = styled.div`
+const SectionHeader = styled(Header)`
   background-color: ${props => props.theme.mainRed};
   color: white;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
 `;
 
 export function HomePage() {
