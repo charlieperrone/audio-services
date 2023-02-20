@@ -9,3 +9,5 @@ This is a React/Typescript repository. It uses styled-components.
 To start the server, simply run:
 
 `yarn start`
+
+<!-- comment -->
