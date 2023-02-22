@@ -11,3 +11,5 @@ export const Header = styled.div`
   align-items: center;
   padding: 1em;
 `;
+
+export const Column = styled.div``;

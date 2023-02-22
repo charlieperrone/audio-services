@@ -2,7 +2,9 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
 
-import { Container, Header } from 'app/components/common';
+import headshot from '../../../assets/images/headshot.jpg';
+
+import { Column, Container, Header } from 'app/components/common';
 
 const Section = styled.div``;
 
@@ -21,26 +23,49 @@ export function HomePage() {
       <Section>
         <Container>
           <SectionHeader>
-            <h2>Logic Pro Lessons</h2>
-            <h3>
-              Wish you were more comfortable in the DAW? <br />
-              Struggling to create a workflow that's right for you?
-            </h3>
+            <h2>Home Studio Consultations</h2>
+            <h3>How do you begin building a small home recording setup?</h3>
           </SectionHeader>
           <Container>
-            <h3>
-              I have over 12 years experience working in Logic Pro. I can share
-              the knowledge I’ve uncovered over that time with you and teach you
-              how to do things like:
-            </h3>
+            <Column>
+              <img src={headshot} alt="react logo" />
+            </Column>
+            <Column></Column>
             <p>
-              Covering the basics of an efficient workflow Utilizing the many
-              powerful software instruments and plugins that come stock with
-              Logic “The Art of Punching In” Utilizing advanced features (clip
-              editing, freezing, midi control surface setups) Creating a
-              template for your hybrid studio setup and other considerations
-              Exploring newer Logic features like Live Loops and Quick Sampling
+              I'm a devoted home recordist with 12 years experience building
+              small studio setups. I believe there are significant benefits to
+              giving consideration to the workflows that your setup implies,
+              identifying aspects of your setup that are slowing you down or
+              causing you to execute repetitive tasks, or how your setup may be
+              restricting your ability to produce the music that you really want
+              to be making. I’m offering consultations in which I will evaluate
+              your space, needs and budget. We’ll go over some of the core
+              concepts that will be useful to you. With enough understanding of
+              these concepts, we can begin to see the studio as an ecosystem of
+              various parts that feed into and support one another. Finally,
+              I’ll present some specific studio layouts for you to consider.
+              This will include gear lists as well as suggested placement of
+              equipment for the best results. Below are some of the topics we’ll
+              be covering in our time together:
             </p>
+            <h2>We'll Cover:</h2>
+            <h3>
+              <ul>
+                <li>Cabling and Signal Flow</li>
+                <li>Choosing the right gear</li>
+                <li>Audio Interfaces</li>
+                <li>Managing varying audio levels</li>
+                <li>Enabling Multitrack recording</li>
+                <li>Monitoring</li>
+                <li>Creating connectivity</li>
+                <li>Uses of mixers, patch bays and matrix</li>
+                <li>
+                  Pedals, Synths and how to integrate them into your studio as
+                  sound design tools
+                </li>
+                <li>Midi Controllers, Sequencing and CC</li>
+              </ul>
+            </h3>
           </Container>
         </Container>
       </Section>
