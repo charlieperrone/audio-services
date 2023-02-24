@@ -37,7 +37,6 @@ export function App() {
           <meta name="description" content="Audio Services business page" />
         </Helmet>
         <Navigation />
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<NotFoundPage />} />

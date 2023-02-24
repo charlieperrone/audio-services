@@ -2,6 +2,11 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Container, Header } from './common';
 
+const StyledHeader = styled.header`
+  position: absolute;
+  width: 100%;
+`;
+
 const HeaderWrapper = styled(Header)`
   background-color: ${props => props.theme.mainRed};
   color: white;
@@ -18,7 +23,7 @@ const StyledNavigation = styled.nav`
 `;
 
 const Navigation: React.FC = () => (
-  <header>
+  <StyledHeader>
     <HeaderWrapper>
       <h1>CP Audio Services</h1>
       <StyledNavigation>
@@ -35,7 +40,7 @@ const Navigation: React.FC = () => (
         </ol>
       </StyledNavigation>
     </HeaderWrapper>
-  </header>
+  </StyledHeader>
 );
 
 export default Navigation;

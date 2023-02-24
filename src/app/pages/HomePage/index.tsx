@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
 
 import headshot from '../../../assets/images/headshot.jpg';
+import studio from '../../../assets/images/studio.jpeg';
 
 import {
   BorderedImage,
@@ -10,13 +11,20 @@ import {
   Container,
   Grid,
   Header,
+  ViewportContainer,
 } from 'app/components/common';
+import Navigation from 'app/components/Navigation';
 
 const Section = styled.div``;
 
 const SectionHeader = styled(Header)`
   background-color: ${props => props.theme.mainRed};
   color: white;
+`;
+
+const FullwidthImage = styled.img`
+  object-fit: cover;
+  width: 100%;
 `;
 
 export function HomePage() {
@@ -27,6 +35,9 @@ export function HomePage() {
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
       <Section>
+        <ViewportContainer>
+          <FullwidthImage src={studio} />
+        </ViewportContainer>
         <Container>
           <SectionHeader>
             <h2>Home Studio Consultations</h2>

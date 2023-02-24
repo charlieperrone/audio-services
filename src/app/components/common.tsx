@@ -5,6 +5,11 @@ export const Container = styled.div`
   width: 100%;
 `;
 
+export const ViewportContainer = styled.div`
+  height: 100vh;
+  width: 100%;
+`;
+
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
