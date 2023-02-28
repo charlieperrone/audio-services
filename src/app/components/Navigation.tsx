@@ -29,7 +29,7 @@ const Navigation: React.FC = () => (
       <StyledNavigation>
         <ol>
           <li>
-            <a href="#">Services</a>
+            <a href="#consulting">Studio Consolutations</a>
           </li>
           <li>
             <a href="#">Projects</a>

@@ -14,6 +14,7 @@ import {
   ViewportContainer,
 } from 'app/components/common';
 import Navigation from 'app/components/Navigation';
+import Footer from 'app/components/Footer';
 
 const Section = styled.div``;
 
@@ -39,7 +40,7 @@ export function HomePage() {
           <FullwidthImage src={studio} />
         </ViewportContainer>
         <Container>
-          <SectionHeader>
+          <SectionHeader id="consulting">
             <h2>Home Studio Consultations</h2>
             <h3>How do you begin building a small home recording setup?</h3>
           </SectionHeader>
@@ -87,6 +88,7 @@ export function HomePage() {
           </Grid>
         </Container>
       </Section>
+      <Footer />
     </>
   );
 }
