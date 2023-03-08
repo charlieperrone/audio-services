@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Container, Header } from './common';
-import instagram from '../../assets/icons/instagram.svg';
+import youtube from '../../assets/icons/youtube-result.svg';
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -25,7 +25,9 @@ const StyledNavigation = styled.nav`
 const Navigation: React.FC = () => (
   <StyledFooter>
     <ul>
-      <li>Youtube</li>
+      <li>
+        <img src={youtube} />
+      </li>
     </ul>
   </StyledFooter>
 );
