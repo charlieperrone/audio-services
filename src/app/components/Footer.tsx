@@ -1,34 +1,45 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Container, Header } from './common';
-import youtube from '../../assets/icons/youtube-result.svg';
+import youtube from '../../assets/icons/youtube.svg';
+import instagram from '../../assets/icons/instagram.svg';
+
+const links: Array<{ icon: string; link: string }> = [
+  { icon: youtube, link: 'https://www.youtube.com' },
+  { icon: instagram, link: 'https://www.instagram.com' },
+];
 
 const StyledFooter = styled.footer`
   width: 100%;
+  display: flex;
+  padding: 1em 0 1em 0;
 `;
 
-const HeaderWrapper = styled(Header)`
-  background-color: ${props => props.theme.mainRed};
-  color: white;
-`;
+const SocialList = styled.ul`
+  display: flex;
+  margin: auto;
 
-const StyledNavigation = styled.nav`
-  ol {
-    display: flex;
-
-    li {
-      padding-right: 5px;
-    }
+  li:not(:last-child) {
+    margin-right: 0.5em;
   }
+`;
+
+const SocialLink = styled.li`
+  width: 50px;
+  height: 50px;
 `;
 
 const Navigation: React.FC = () => (
   <StyledFooter>
-    <ul>
-      <li>
-        <img src={youtube} />
-      </li>
-    </ul>
+    <SocialList>
+      {links.map(l => (
+        <SocialLink>
+          <a href={l.link} target="_blank" rel="noopener noreferrer">
+            <img src={l.icon} />
+          </a>
+        </SocialLink>
+      ))}
+    </SocialList>
   </StyledFooter>
 );
 
