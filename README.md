@@ -19,8 +19,8 @@ To start the server, simply run:
 
 - Create homepage linking to different sections via the navigation header
 
-- Add a few more colors to the Theme Provider
-
 - Create a contact me section with at least links to insta or email. Bonus points for mailing list setup.
 
-- Add an additional services section
+- Add an Logic Pro lessons section section
+
+- Add hover animations for all links
