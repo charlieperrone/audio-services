@@ -5,8 +5,8 @@ import youtube from '../../assets/icons/youtube.svg';
 import instagram from '../../assets/icons/instagram.svg';
 
 const links: Array<{ icon: string; link: string }> = [
-  { icon: youtube, link: 'https://www.youtube.com' },
-  { icon: instagram, link: 'https://www.instagram.com' },
+  { icon: youtube, link: 'https://www.youtube.com/@chperrone' },
+  { icon: instagram, link: 'https://www.instagram.com/the_hello_stranger/' },
 ];
 
 const StyledFooter = styled.footer`
