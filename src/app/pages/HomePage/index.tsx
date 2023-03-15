@@ -15,6 +15,7 @@ import {
 } from 'app/components/common';
 import Navigation from 'app/components/Navigation';
 import Footer from 'app/components/Footer';
+import { ContactUs } from 'app/components/Contact';
 
 const Section = styled.div``;
 
@@ -86,6 +87,11 @@ export function HomePage() {
               </h3>
             </Column>
           </Grid>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <ContactUs />
         </Container>
       </Section>
       <Footer />
