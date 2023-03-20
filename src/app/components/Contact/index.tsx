@@ -4,23 +4,27 @@ import styled from 'styled-components';
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from 'app/vars';
 
 const StyledForm = styled.form`
+  color: white;
   width: 16em;
   display: grid;
   margin: auto;
 
-  input:not(:last-child) {
-    border: 1px solid black;
+  input,
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: white;
+    color: black;
+  }
+
+  input:not(:last-child),
+  textarea:not(:last-child) {
     margin-bottom: 1em;
   }
 
   input:last-child {
-    color: white;
     background-color: ${props => props.theme.mainRed};
-  }
-
-  textarea {
-    border: 1px solid black;
-    margin-bottom: 1em;
   }
 `;
 

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Container, Header } from './common';
 import youtube from '../../assets/icons/youtube.svg';
 import instagram from '../../assets/icons/instagram.svg';
+import { ContactUs } from './Contact';
 
 const links: Array<{ icon: string; link: string }> = [
   { icon: youtube, link: 'https://www.youtube.com/@chperrone' },
@@ -10,6 +11,7 @@ const links: Array<{ icon: string; link: string }> = [
 ];
 
 const StyledFooter = styled.footer`
+  background-color: ${props => props.theme.mainRed};
   width: 100%;
   display: flex;
   padding: 1em 0 1em 0;
@@ -31,6 +33,7 @@ const SocialLink = styled.li`
 
 const Navigation: React.FC = () => (
   <StyledFooter>
+    <ContactUs />
     <SocialList>
       {links.map(l => (
         <SocialLink>

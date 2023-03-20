@@ -17,7 +17,13 @@ import {
 import Footer from 'app/components/Footer';
 import { ContactUs } from 'app/components/Contact';
 
-const Section = styled.div``;
+type VALID_COLOR = 'mainRed';
+
+const Section = styled.div<{ color?: VALID_COLOR }>`
+  /* enforce the type of prop 'color' to be of VALID_COLOR and pass into main theme provider, default to white */
+  background-color: ${props =>
+    props.color ? props.theme[props.color] : 'white'};
+`;
 
 const SectionHeader = styled(Header)`
   background-color: ${props => props.theme.mainRed};
@@ -85,11 +91,6 @@ export function HomePage() {
               </ul>
             </Column>
           </Grid>
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <ContactUs />
         </Container>
       </Section>
       <Footer />
