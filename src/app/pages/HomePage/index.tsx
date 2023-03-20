@@ -11,6 +11,7 @@ import {
   Container,
   Grid,
   Header,
+  HeadlineH2,
   ViewportContainer,
 } from 'app/components/common';
 import Navigation from 'app/components/Navigation';
@@ -42,14 +43,14 @@ export function HomePage() {
         </ViewportContainer>
         <Container>
           <SectionHeader id="consulting">
-            <h2>Home Studio Consultations</h2>
+            <HeadlineH2>Home Studio Consultations</HeadlineH2>
             <h3>How do you begin building a small home recording setup?</h3>
           </SectionHeader>
           <Grid>
             <Column width="1">
               <BorderedImage src={headshot} alt="react logo" />
             </Column>
-            <Column width="2">
+            <Column width="2" style={{ padding: '0 3em' }}>
               <p>
                 I'm a devoted home recordist with 12 years experience building
                 small studio setups. I believe there are significant benefits to
@@ -67,24 +68,22 @@ export function HomePage() {
                 suggested placement of equipment for the best results. Below are
                 some of the topics we’ll be covering in our time together:
               </p>
-              <h2>We'll Cover:</h2>
-              <h3>
-                <ul>
-                  <li>Cabling and Signal Flow</li>
-                  <li>Choosing the right gear</li>
-                  <li>Audio Interfaces</li>
-                  <li>Managing varying audio levels</li>
-                  <li>Enabling Multitrack recording</li>
-                  <li>Monitoring</li>
-                  <li>Creating connectivity</li>
-                  <li>Uses of mixers, patch bays and matrix</li>
-                  <li>
-                    Pedals, Synths and how to integrate them into your studio as
-                    sound design tools
-                  </li>
-                  <li>Midi Controllers, Sequencing and CC</li>
-                </ul>
-              </h3>
+              <h3>We'll Cover:</h3>
+              <ul>
+                <li>Cabling and Signal Flow</li>
+                <li>Choosing the right gear</li>
+                <li>Audio Interfaces</li>
+                <li>Managing varying audio levels</li>
+                <li>Enabling Multitrack recording</li>
+                <li>Monitoring</li>
+                <li>Creating connectivity</li>
+                <li>Uses of mixers, patch bays and matrix</li>
+                <li>
+                  Pedals, Synths and how to integrate them into your studio as
+                  sound design tools
+                </li>
+                <li>Midi Controllers, Sequencing and CC</li>
+              </ul>
             </Column>
           </Grid>
         </Container>

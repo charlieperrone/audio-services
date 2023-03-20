@@ -47,7 +47,7 @@ export const ResetStyle = createGlobalStyle`
   input, textarea {
       -webkit-user-select: auto;
   }
-  
+
   /* revert the 'white-space' property for textarea elements on Safari */
   textarea {
       white-space: revert;

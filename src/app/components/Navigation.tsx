@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { Container, Header } from './common';
+import { Container, Header, HeadlineH1 } from './common';
 
 const StyledHeader = styled.header`
   position: absolute;
@@ -25,7 +25,7 @@ const StyledNavigation = styled.nav`
 const Navigation: React.FC = () => (
   <StyledHeader>
     <HeaderWrapper>
-      <h1>CP Audio Services</h1>
+      <HeadlineH1>CP Audio Services</HeadlineH1>
       <StyledNavigation>
         <ol>
           <li>
