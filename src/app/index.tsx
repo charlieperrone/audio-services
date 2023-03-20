@@ -22,6 +22,7 @@ import { ResetStyle } from 'styles/reset';
 const theme = {
   mainRed: '#ff5757',
   primaryFont: 'Fredoka One',
+  secondaryFont: 'Varela Round',
 };
 
 export function App() {
@@ -30,7 +31,7 @@ export function App() {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <Helmet
-          titleTemplate="CP Audio Services"
+          titleTemplate="Audio Services"
           defaultTitle="Audio Services"
           htmlAttributes={{ lang: i18n.language }}
         >

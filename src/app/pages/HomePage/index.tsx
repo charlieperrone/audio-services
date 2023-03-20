@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
 
 import headshot from '../../../assets/images/headshot.jpg';
-import studio from '../../../assets/images/studio.jpeg';
+import studio from '../../../assets/images/stock-studio.jpg';
 
 import {
   BorderedImage,
@@ -14,7 +14,6 @@ import {
   HeadlineH2,
   ViewportContainer,
 } from 'app/components/common';
-import Navigation from 'app/components/Navigation';
 import Footer from 'app/components/Footer';
 import { ContactUs } from 'app/components/Contact';
 

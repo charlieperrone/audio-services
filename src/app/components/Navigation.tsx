@@ -17,26 +17,36 @@ const StyledNavigation = styled.nav`
     display: flex;
 
     li {
-      padding-right: 5px;
+      padding-right: 1em;
+
+      * {
+        font-family: ${props => props.theme.secondaryFont};
+        margin: 0;
+      }
     }
   }
 `;
 
+const NavLink: React.FC<{ href: string; children: any }> = ({
+  href,
+  children,
+}) => (
+  <li>
+    <h3>
+      <a href={href}>{children}</a>
+    </h3>
+  </li>
+);
+
 const Navigation: React.FC = () => (
   <StyledHeader>
     <HeaderWrapper>
-      <HeadlineH1>CP Audio Services</HeadlineH1>
+      <HeadlineH1>Audio Services</HeadlineH1>
       <StyledNavigation>
         <ol>
-          <li>
-            <a href="#consulting">Studio Consolutations</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
+          <NavLink href="#consulting">Consultations</NavLink>
+          <NavLink href="#">Projects</NavLink>
+          <NavLink href="#">About</NavLink>
         </ol>
       </StyledNavigation>
     </HeaderWrapper>
