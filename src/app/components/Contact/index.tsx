@@ -2,12 +2,13 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from 'app/vars';
+import { HeadlineH2 } from '../common';
 
 const StyledForm = styled.form`
   color: white;
   width: 16em;
   display: grid;
-  margin: auto;
+  margin: 3em;
 
   input,
   textarea {
@@ -24,7 +25,9 @@ const StyledForm = styled.form`
   }
 
   input:last-child {
-    background-color: ${props => props.theme.mainRed};
+    color: white;
+    background-color: black;
+    border: none;
   }
 `;
 
@@ -53,7 +56,7 @@ export const ContactUs = () => {
 
   return (
     <StyledForm ref={form} onSubmit={sendEmail}>
-      <h2>Contact Me</h2>
+      <HeadlineH2>Contact Me</HeadlineH2>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
