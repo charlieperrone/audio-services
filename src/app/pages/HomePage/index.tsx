@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import headshot from '../../../assets/images/headshot.jpg';
 import studio from '../../../assets/images/stock-studio.jpg';
+import logic from '../../../assets/images/logic.jpeg';
 
 import {
   BorderedImage,
@@ -12,6 +13,7 @@ import {
   Grid,
   Header,
   HeadlineH2,
+  HeadlineH3,
   ViewportContainer,
 } from 'app/components/common';
 import Footer from 'app/components/Footer';
@@ -49,7 +51,9 @@ export function HomePage() {
         <Container>
           <SectionHeader id="consulting">
             <HeadlineH2>Home Studio Consultations</HeadlineH2>
-            <h3>How do you begin building a small home recording setup?</h3>
+            <HeadlineH3>
+              How do you begin building a small home recording setup?
+            </HeadlineH3>
           </SectionHeader>
           <Grid>
             <Column width="1">
@@ -94,17 +98,16 @@ export function HomePage() {
         </Container>
       </Section>
       <Section>
-        <ViewportContainer>
-          <FullwidthImage src={studio} />
-        </ViewportContainer>
         <Container>
           <SectionHeader id="consulting">
             <HeadlineH2>Logic Pro Lessons</HeadlineH2>
-            <h3>How do you begin building a small home recording setup?</h3>
+            <HeadlineH3>
+              How do you begin building a small home recording setup?
+            </HeadlineH3>
           </SectionHeader>
           <Grid>
             <Column width="1">
-              <BorderedImage src={headshot} alt="react logo" />
+              <BorderedImage src={logic} alt="react logo" />
             </Column>
             <Column width="2" style={{ padding: '0 3em' }}>
               <p>

@@ -44,3 +44,7 @@ export const HeadlineH1 = styled.h1`
 export const HeadlineH2 = styled.h2`
   margin: 0;
 `;
+
+export const HeadlineH3 = styled.h3`
+  margin: 0;
+`;
