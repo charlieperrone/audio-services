@@ -21,6 +21,7 @@ import { ResetStyle } from 'styles/reset';
 
 const theme = {
   mainRed: '#ff5757',
+  mainBlue: '#0CC0DF',
   primaryFont: 'Fredoka One',
   secondaryFont: 'Varela Round',
 };
