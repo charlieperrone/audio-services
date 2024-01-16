@@ -28,6 +28,7 @@ const Section = styled.div<{ color?: VALID_COLOR }>`
 `;
 
 const SectionHeader = styled(Header)`
+  display: block;
   background-color: ${props => props.theme.mainRed};
   color: white;
 `;
@@ -35,6 +36,7 @@ const SectionHeader = styled(Header)`
 const FullwidthImage = styled.img`
   object-fit: cover;
   width: 100%;
+  height: 100%;
 `;
 
 export function HomePage() {
@@ -59,7 +61,7 @@ export function HomePage() {
             <Column width="1">
               <BorderedImage src={headshot} alt="react logo" />
             </Column>
-            <Column width="2" style={{ padding: '0 3em' }}>
+            <Column width="2">
               <p>
                 I'm a devoted home recordist with 12 years experience building
                 small studio setups. I believe there are significant benefits to

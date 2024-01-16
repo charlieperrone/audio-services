@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Container, Header, HeadlineH1 } from './common';
+import MobileMenu from './MobileMenu';
 
 const StyledHeader = styled.header`
   position: absolute;
@@ -42,13 +43,14 @@ const Navigation: React.FC = () => (
   <StyledHeader>
     <HeaderWrapper>
       <HeadlineH1>Audio Services</HeadlineH1>
-      <StyledNavigation>
+      <MobileMenu />
+      {/* <StyledNavigation>
         <ol>
           <NavLink href="#consulting">Consultations</NavLink>
           <NavLink href="#">Projects</NavLink>
           <NavLink href="#">About</NavLink>
         </ol>
-      </StyledNavigation>
+      </StyledNavigation> */}
     </HeaderWrapper>
   </StyledHeader>
 );

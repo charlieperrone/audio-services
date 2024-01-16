@@ -34,7 +34,7 @@ const SocialLink = styled.li`
 const Navigation: React.FC = () => (
   <StyledFooter>
     <ContactUs />
-    <SocialList>
+    {/* <SocialList>
       {links.map(l => (
         <SocialLink>
           <a href={l.link} target="_blank" rel="noopener noreferrer">
@@ -42,7 +42,7 @@ const Navigation: React.FC = () => (
           </a>
         </SocialLink>
       ))}
-    </SocialList>
+    </SocialList> */}
   </StyledFooter>
 );
 

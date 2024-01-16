@@ -1,4 +1,15 @@
 import styled from 'styled-components';
+import { DEFAULT_BREAKPOINTS } from 'react-bootstrap/esm/ThemeProvider';
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
+import { useBootstrapBreakpoints } from 'react-bootstrap/esm/ThemeProvider';
+
+const BREAKPOINTS = {
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1400px',
+};
 
 // Containers
 export const Container = styled.div`
@@ -28,7 +39,11 @@ export const Grid = styled.div`
 
 export const Column = styled.div<{ width?: string }>`
   display: grid;
-  grid-column: span ${props => props.width || '1'};
+  grid-column: span 3;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    grid-column: span ${props => props.width || '1'};
+  }
 `;
 
 // Images
